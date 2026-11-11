@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TUDU STORE - ESTOQUE</title>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>TUDU STORE</h2>
+
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Estoque</a>
+            <a href="#">Produtos</a>
+            <a href="#">Pedidos</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Dashboard</h1>
+            <span>Gerenciamento de Estoque</span>
+        </header>
+
+        <section class="welcome">
+            <h2>Bem-vindo à TUDU STORE!</h2>
+            <p>Acompanhe as informações do seu estoque.</p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total de produtos</h3>
+                <p>120</p>
+            </div>
+
+            <div class="card">
+                <h3>Estoque disponível</h3>
+                <p>95</p>
+            </div>
+
+            <div class="card">
+                <h3>Estoque baixo</h3>
+                <p>15</p>
+            </div>
+
+            <div class="card">
+                <h3>Indisponíveis</h3>
+                <p>10</p>
+            </div>
+
+        </section>
+
+        <section class="products">
+            <h2>Produtos recentes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Organizador de Gaveta</td>
+                        <td>Organização</td>
+                        <td>R$ 29,90</td>
+                        <td>25</td>
+                        <td>Disponível</td>
+                    </tr>
+
+                    <tr>
+                        <td>Suporte de Cozinha</td>
+                        <td>Utilidades</td>
+                        <td>R$ 45,90</td>
+                        <td>5</td>
+                        <td>Estoque baixo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit Potes Herméticos</td>
+                        <td>Cozinha</td>
+                        <td>R$ 59,90</td>
+                        <td>0</td>
+                        <td>Indisponível</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

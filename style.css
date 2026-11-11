@@ -1,0 +1,164 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f4f7;
+    color: #333;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #9660AC;
+    color: white;
+    position: fixed;
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    font-size: 23px;
+    margin-bottom: 45px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.topbar h1 {
+    font-size: 27px;
+}
+
+.topbar span {
+    color: #777;
+}
+
+/* BOAS-VINDAS */
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.welcome p {
+    color: #777;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #9660AC;
+}
+
+/* TABELA */
+.products {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    overflow-x: auto;
+}
+
+.products h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+}
+
+th {
+    color: #777;
+    font-size: 13px;
+}
+
+td {
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 170px;
+    }
+
+    .main-content {
+        margin-left: 170px;
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
