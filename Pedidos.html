@@ -4,31 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TUDU STORE - ESTOQUE</title>
+    <title>TUDU STORE - PEDIDOS</title>
 </head>
 <body>
 
     <aside class="sidebar">
         <h2>TUDU STORE</h2>
-
         <nav>
-            <a href="#" class="active">Dashboard</a>
-            <a href="#">Estoque</a>
+            <a href="#" >Estoque</a>
             <a href="#">Produtos</a>
-            <a href="#">Pedidos</a>
+            <a href="#" class="active">Pedidos</a>
         </nav>
     </aside>
 
     <main class="main-content">
 
-        <header class="topbar">
-            <h1>Dashboard</h1>
-            <span>Gerenciamento de Estoque</span>
-        </header>
 
         <section class="welcome">
-            <h2>Bem-vindo à TUDU STORE!</h2>
-            <p>Acompanhe as informações do seu estoque.</p>
+            <h2>Pedidos</h2>
+            <p>Gerencie todos os pedidos da loja</p>
         </section>
 
         <section class="cards">
@@ -39,32 +33,37 @@
             </div>
 
             <div class="card">
-                <h3>Estoque disponível</h3>
+                <h3>Em andamento</h3>
                 <p>95</p>
             </div>
 
             <div class="card">
-                <h3>Estoque baixo</h3>
+                <h3>Concluido</h3>
                 <p>15</p>
             </div>
 
             <div class="card">
-                <h3>Indisponíveis</h3>
+                <h3>Cancelados</h3>
                 <p>10</p>
             </div>
 
         </section>
 
         <section class="products">
-            <h2>Produtos recentes</h2>
 
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="text" placeholder="Buscar produtos...">
+            </div>
+            
             <table>
                 <thead>
                     <tr>
                         <th>Produto</th>
+                        <th>SKU</th>
                         <th>Categoria</th>
-                        <th>Preço</th>
                         <th>Quantidade</th>
+                        <th>Preço</th>                        
                         <th>Status</th>
                     </tr>
                 </thead>
@@ -72,25 +71,28 @@
                 <tbody>
                     <tr>
                         <td>Organizador de Gaveta</td>
+                        <td>FRT-001</td>
                         <td>Organização</td>
-                        <td>R$ 29,90</td>
                         <td>25</td>
+                        <td>R$ 29,90</td>                        
                         <td>Disponível</td>
                     </tr>
 
                     <tr>
                         <td>Suporte de Cozinha</td>
+                        <td>FRT-002</td>
                         <td>Utilidades</td>
-                        <td>R$ 45,90</td>
                         <td>5</td>
+                        <td>R$ 45,90</td>                        
                         <td>Estoque baixo</td>
                     </tr>
 
                     <tr>
                         <td>Kit Potes Herméticos</td>
+                        <td>FRT-003</td>
                         <td>Cozinha</td>
-                        <td>R$ 59,90</td>
                         <td>0</td>
+                        <td>R$ 59,90</td>                        
                         <td>Indisponível</td>
                     </tr>
                 </tbody>

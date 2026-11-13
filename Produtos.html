@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TUDU STORE - PRODUTOS</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <h2>TUDU STORE</h2>
+        <nav>
+            <a href="#">Estoque</a>
+            <a href="#" class="active">Produtos</a>
+            <a href="#">Pedidos</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Produtos</h1>
+            <span>Gerenciamento de Estoque</span>
+        </header>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" placeholder="Buscar produtos...">
+        </div>
+
+        <section class="products" style="margin-top: 20px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>SKU</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>                        
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Organizador de Gaveta</td>
+                        <td>FRT-001</td>
+                        <td>Organização</td>
+                        <td>25</td>
+                        <td>R$ 29,90</td>                        
+                        <td>Disponível</td>
+                    </tr>
+
+                    <tr>
+                        <td>Suporte de Cozinha</td>
+                        <td>FRT-002</td>
+                        <td>Utilidades</td>
+                        <td>5</td>
+                        <td>R$ 45,90</td>                        
+                        <td>Estoque baixo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit Potes Herméticos</td>
+                        <td>FRT-003</td>
+                        <td>Cozinha</td>
+                        <td>0</td>
+                        <td>R$ 59,90</td>                        
+                        <td>Indisponível</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
