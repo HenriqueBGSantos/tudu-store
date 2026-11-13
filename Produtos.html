@@ -8,28 +8,36 @@
 </head>
 <body>
     
-    <aside class="sidebar">
+<aside class="sidebar">
+
+    <div class="logo">
+        <img src="Assets/images-removebg-preview.png" alt="Logo">
         <h2>TUDU STORE</h2>
-        <nav>
-            <a href="#">Estoque</a>
-            <a href="#" class="active">Produtos</a>
-            <a href="#">Pedidos</a>
-        </nav>
-    </aside>
+    </div>
+
+    <nav class="menu">
+        <a href="#" class="active">Estoque</a>
+        <a href="#">Produtos</a>
+        <a href="#">Pedidos</a>
+    </nav>
+
+</aside>
 
     <main class="main-content">
 
-        <header class="topbar">
+        <section class="topbarP">
             <h1>Produtos</h1>
-            <span>Gerenciamento de Estoque</span>
-        </header>
+            <button>+ Adicionar produto</button>
+            <p>Gerencie todos os produtos da loja</p>
+        </section>
+        
+        <section class="products" style="margin-top: 20px;">
 
         <div class="search-box">
             <span>⌕</span>
             <input type="text" placeholder="Buscar produtos...">
         </div>
 
-        <section class="products" style="margin-top: 20px;">
             <table>
                 <thead>
                     <tr>

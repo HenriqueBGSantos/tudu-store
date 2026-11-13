@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
 
 body {
     font-family: Arial, sans-serif;
@@ -12,17 +12,51 @@ body {
 
 /* MENU LATERAL */
 .sidebar {
-    width: 240px;
-    height: 100vh;
+    width: 13%;
+    height: 100%;
     background-color: #9660AC;
     color: white;
     position: fixed;
     padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.logo img {
+    width: 85px;
+    height:85px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.logo h2 {
+    font-size: 100%;
+    color: white;
+    position: relative;
+    top: 22px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
 }
 
 .sidebar h2 {
     font-size: 23px;
     margin-bottom: 45px;
+    display: flex;
 }
 
 .sidebar nav {
@@ -44,6 +78,8 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+
 /* CONTEÚDO PRINCIPAL */
 .main-content {
     margin-left: 240px;
@@ -58,17 +94,51 @@ body {
     
 }
 
-.topbar h1 {
-    font-size: 27px;
+.topbar h1{
+    font-size: 24px;
+}
+
+.topbarP h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.topbarP p{
+
+color: #777;
+
 }
 
 .topbar span {
     color: #777;
 }
 
+.topbarP button {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 30px;
+    transition: 0.3s;
+    background-color: #9660AC;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.topbarP button:hover,
+.topbarP button:active {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
 /* BOAS-VINDAS */
 .welcome {
     margin-bottom: 30px;
+}
+
+.welcome h1 {
+    margin-bottom: 8px;
+    font-size: 24px;
 }
 
 .welcome h2 {
@@ -78,6 +148,24 @@ body {
 
 .welcome p {
     color: #777;
+}
+
+.welcome button {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 30px;
+    transition: 0.3s;
+    background-color: #9660AC;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.welcome button:hover,
+.welcome button:active {
+    background-color: rgba(0, 0, 0, 0.712);
 }
 
 /* CARDS */
@@ -93,6 +181,7 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .card h3 {
@@ -107,6 +196,13 @@ body {
     color: #9660AC;
 }
 
+.card>img {
+    width: 15%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
 /* TABELA */
 .products {
     background-color: white;
@@ -121,16 +217,18 @@ body {
     font-size: 20px;
 }
 
+
 .search-box {
- display: flex;
- align-items: center;
- width: 220px;
- height: 30px;
- background-color: #fff;
- border-radius: 7px;
- border: 1px solid #ddd;
- padding: 0 10px;
- gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    padding: 0 10px;
+    gap: 8px;
 }
 
 .search-box span {
